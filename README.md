@@ -16,9 +16,13 @@
 
 Projede derslerin eğitmeni tarafından verilen image docker ile ayağa kaldırıldı. Tüm api istekleri docker'da çalıştırılan bu server'a yapılıyor. İlgili repository: [haandev/odevserver](https://github.com/haandev/odevserver)
 
-Kullanıcı kendi girdiği kullanıcı adı ve parola ile giriş yapabiliyor.
+Kullanıcı kendi girdiği kullanıcı adı ve parola ile üye olabiliyor. Üye olduktan sonra login ekranına yönlendiriliyor ve tekrar giriş yapılması gerekiyor. 
 
-Giriş yaptıktan sonra token local storage içerisinde saklanıyor ve diğer isteklerde buradan alınarak kullanılıyor.
+Giriş yapıldıktan sonra sunucudan gelen veriden token bilgisi alınıyor ve local storage içerisinde saklanıyor. Diğer yapılacak tüm isteklerde bu token requestin header kısmında iletiliyor. 
+
+Kullanıcı kategoriler sekmesine girerek öncelikle kategori ekliyor. Daha sonra bu kategori listesinin yan tarafında bulunan update butonu ile ilgili kategoriye statü ekleyebiliyor statünün rengini yazıyla giriyor.
+
+Daha sonra todos sekmesine gelerek başlık, kategori ve statüsü seçerek bir todo ekleyebiliyor. Todo listesinde bulunan her todonun statü kısmının arkaplan rengi ilgili statünün rengine ait. Opaklığı yazıların görülmesi için azaltıldı.
 
 Kategori ekleme ve silme, todo ekleme ve silme işlemleri yapılabiliyor. Kategoriler, statüler ve todolar yeniden düzenlenbiliyor. 
 
@@ -27,7 +31,7 @@ Kategori ekleme ve silme, todo ekleme ve silme işlemleri yapılabiliyor. Katego
 ![Projeye ait ekran görüntüsü](/screenshots/login.png)
 ![Projeye ait ekran görüntüsü](/screenshots/register.png)
 ![Projeye ait ekran görüntüsü](/screenshots/todos.png)
-![Projeye ait ekran görüntüsü](/screenshots/todosModal.png)
+![Projeye ait ekran görüntüsü](/screenshots/todoModal.png)
 ![Projeye ait ekran görüntüsü](/screenshots/categories.png)
 ![Projeye ait ekran görüntüsü](/screenshots/categoriesModal.png)
 
