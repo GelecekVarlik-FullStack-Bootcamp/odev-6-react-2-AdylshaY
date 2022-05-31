@@ -34,7 +34,8 @@ Kategori ekleme ve silme, todo ekleme ve silme işlemleri yapılabiliyor. Katego
 ![Projeye ait ekran görüntüsü](/screenshots/todoModal.png)
 ![Projeye ait ekran görüntüsü](/screenshots/categories.png)
 ![Projeye ait ekran görüntüsü](/screenshots/categoriesModal.png)
-![Projeye ait ekran görüntüsü](/screenshots/gif1)
+![Projeye ait ekran görüntüsü](/screenshots/gif1.gif)
+![Projeye ait ekran görüntüsü](/screenshots/gif2.gif)
 
 ## Kullanımı
 
